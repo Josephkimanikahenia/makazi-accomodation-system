@@ -20,7 +20,7 @@ price_choices = {
   '50000':'Ksh 50,000+',
   }
 
-state_choices = {
+county_choices = {
         'KE-01': 'Baringo',
         'KE-17': 'Kisumu',
         'KE-26': 'Meru',
@@ -28,5 +28,6 @@ state_choices = {
         'KE-40': 'Tana River',
         'KE-06': 'Embu',
         'KE-26': 'Mombasa',
+        'KE-07': 'Nairobi',
                
 }
