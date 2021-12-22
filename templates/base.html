@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+
+  <title>Makazi Accomodation System {% block title %}{% endblock %}</title>
+</head>
+
+<body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60c27e9065b7290ac63550c9/1f7rrsq2v';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  <!-- Top Bar -->
+  {% include 'partials/_topbar.html' %}
+  <!-- NavBar -->
+  {% include 'partials/_navbar.html' %}
+    <!-- Main Content -->
+  {% block content %} {% endblock %}
+  <!-- Footer -->
+  {% include 'partials/_footer.html' %}
+  
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
+  <script src="{% static 'js/lightbox.min.js' %} "></script>
+  <script src="{% static 'js/main.js' %} "></script>
+</body>
+
+</html>
